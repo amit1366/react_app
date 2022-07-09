@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+/* new header css */
+.header ul li{
+  color: #1a1b1b;
+}
+.container,
+nav{
+  max-width: 1270px;
+  margin: 0 auto;
+}
