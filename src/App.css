@@ -27,7 +27,9 @@
 .App-link {
   color: #61dafb;
 }
-
+.navbarsection{
+  background-color: #bfd4e8!important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -42,6 +44,63 @@
 }
 .container,
 nav{
-  max-width: 1270px;
+  max-width: 100%;
   margin: 0 auto;
+  
+}
+.container-el{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav.bg-light{
+  background-color: #bfd4e8!important;
+  padding: 15px 0;
+}
+nav >.container-fluid{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.navbar-brand{
+  max-width: 170px;
+  display: inline-block;
+}
+.navbar-brand img{
+  width: 100%;
+}
+ul.navbar-nav{
+  width: 100%;
+  justify-content: space-evenly;
+}
+.nav-item{
+  position: relative;
+}
+/* slider css */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.swiper{
+  max-width: 800px;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-wrapper{
+
+}
+.swiper-slide{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
+.sliderbtn{
+  padding: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.swiper-button-next{
+  right: 0;
 }

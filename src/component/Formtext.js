@@ -7,6 +7,10 @@ export default function Formtext(props) {
         let newText = text.toUpperCase();
         setText(newText)
     }
+    const handelupclicklow = () => {
+        let newText = text.toLowerCase();
+        setText(newText)
+    }
 
     // function for on change text 
     const handelonchange = (event) => {
@@ -17,7 +21,7 @@ export default function Formtext(props) {
     const [text, setText] = useState('')
     return (
         <>
-            <div className="container  my-4">
+            <div className="container-el  my-4">
                 <div>
                     <h2>{props.Heading}</h2>
                     <div className="mb-3">
@@ -26,10 +30,10 @@ export default function Formtext(props) {
                     </div>
                     <button type="button " onClick={handelupclick} className="btn btn-primary mx-2">uppercase</button>
 
-                    <button type="button" className="btn btn-success mx-2">lovercase</button>
+                    <button type="button" onClick={handelupclicklow} className="btn btn-success mx-2">lovercase</button>
                 </div>
             </div>
-            <div className="container  my-4">
+            <div className="container-el  my-4">
                 <h1>Count no of word and carrector</h1>
                 <p>{text.split(" ").length} word and {text.length} character</p>
                 <p> {0.008 * text.split(" ").length} Mineats read</p>
