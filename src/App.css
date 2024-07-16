@@ -104,3 +104,25 @@ ul.navbar-nav{
 .swiper-button-next{
   right: 0;
 }
+
+/* card item scc */
+.card-content .img{
+  max-width: 100%;
+    margin-bottom: 10px;
+}
+.card-content .img img{
+  width:100%;
+}
+.container .card-content-item{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .card-content-item .card-content{
+  width: 31.33%;
+  padding: 15px;
+  border: 1px solid #e0b2b2;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
