@@ -341,7 +341,7 @@ class NewsCardItem extends Component {
         return (
             <>
                 {this.state.articles.map((article, index) => {
-                console.log(article); // This will log each article object to the console
+                //console.log(article); // This will log each article object to the console
                 return (
                     <div key={index} className="card-content">
                         <div className="img">
